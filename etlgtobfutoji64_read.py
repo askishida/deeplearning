@@ -28,7 +28,7 @@ def read_hiragana():
     ary = np.zeros([75, 160, 127, 128], dtype=np.uint8)
 
     for j in range(1, 33):
-        filename = '/Users/kuromame/Downloads/ETL8G/ETL8G_{:02d}'.format(j)
+        filename = '/path/to/ETL8G/ETL8G_{:02d}'.format(j)
         with open(filename, 'rb') as f:
             for id_dataset in range(5):
                 moji = 0
@@ -64,7 +64,7 @@ def read_hiragana():
       ary2[i][ary2[i]<110]=0
       ary2[i][ary2[i]>=110]=255
 
-    np.savez_compressed("/Users/kuromame/Documents/hiragana.repo/deeplearning/dataset/etlgtobfutoji64.npz", ary2)
+    np.savez_compressed("./deeplearning/dataset/etlgtobfutoji64.npz", ary2)
     plt.imshow(ary2[160*72+1])
 read_hiragana()
 
