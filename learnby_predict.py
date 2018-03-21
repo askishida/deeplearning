@@ -61,7 +61,7 @@ X_train = np.zeros([num_classes * 160, img_rows, img_cols], dtype=np.float32)
 for i in range(num_classes * 160):
     
     X_train[i] = scipy.misc.imresize(ary[i], (img_rows, img_cols), mode='F')
-plt.imshow(ary[160*1+150])
+#plt.imshow(ary[160*1+150])
 Y_train = np.repeat(np.arange(num_classes), 160)
 
 X_train, X_test, Y_train, Y_test = train_test_split(X_train, Y_train, test_size=0.2)
@@ -123,7 +123,7 @@ plt.show()
 images = images.reshape(1, 64, 64, 1)
 
 ret = l_model.predict(images, batch_size=16, verbose=0)
-print(ret)
+#print(ret)
 
 index=np.argmax(ret, axis = None, out = None)
 
