@@ -96,7 +96,7 @@ print([Y_test.shape[0]])#2400
 # load a input image. your any sized images are available.
 # Your image will be resized to 64 X 64 pxcel size.    
 images = np.empty([0, 64, 64], np.float32)
-img_ori = Image.open('/Users/kuromame/Documents/hiragana.repo/deeplearning/sample_images/a.jpg')
+img_ori = Image.open('./sample_images/a.jpg')
 
 
 resize_img = img_ori.resize((64, 64),Image.LANCZOS)
