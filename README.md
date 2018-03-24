@@ -5,9 +5,10 @@
 
 Using handwriting Hiragana ETS8G-based dataset both to train identifying model and to predict for bold-face Hiragana character as like signboard by keras.
 
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/keras-team/keras/blob/master/LICENSE)
 
 <img src="https://github.com/askishida/deeplearning/blob/master/sample_images/pi2.jpg" width="300">
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/keras-team/keras/blob/master/LICENSE)
+
 
 ------------------
 
